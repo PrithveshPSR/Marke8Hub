@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/heading_image"
+        android:layout_width="@dimen/margin_140dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:background="@drawable/marke8hub" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="@dimen/margin_330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/canvas_background_indicator_tab"
+        app:tabIndicatorColor="@color/orange_500"
+        app:tabIndicatorHeight="@dimen/margin_3dp"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabTextAppearance="@style/My_tab_Layout"
+        app:tabTextColor="@color/tabColor"
+        app:tabMode="fixed">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP" />
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

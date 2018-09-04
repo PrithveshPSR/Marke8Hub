@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.VerifyNumberActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:id="@+id/verify_toolbar"
+            android:layout_width="@dimen/margin_140dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/marke8hub"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_verify"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:layout_width="match_parent"
+            android:fontFamily=""
+            android:layout_height="wrap_content"
+            android:text="@string/enter_OTP_number"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/margin_22dp"
+            android:gravity="center"
+            android:layout_below="@+id/verify_toolbar"/>
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_otp_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_verify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:paddingStart="@dimen/margin_8dp"
+            android:text="@string/verify_OTP_1"
+            android:textColor="@color/sub_heading_grey"
+            android:textSize="@dimen/margin_15sp"
+            />
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_otp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_otp_1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/verify_OTP_2"
+            android:textColor="@color/sub_heading_grey"
+            android:textSize="@dimen/margin_15sp"
+            />
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_enter_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_otp_2"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/enter_OTP_here"
+            android:textColor="@color/sub_heading_grey"
+            android:textSize="@dimen/margin_15sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_otp_dash"
+            android:layout_below="@id/tv_enter_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/margin_25dp"
+            android:layout_marginEnd="@dimen/margin_25sp"
+            android:weightSum="6"
+            android:layout_centerInParent="true">
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_1"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_2"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_3"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_4"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_5"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/tv_dash_6"
+                android:layout_width="@dimen/margin_50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:background="@drawable/canvas_underline"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/margin_30dp"
+                android:maxLength="1"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionDone"/>
+
+
+        </LinearLayout>
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/ll_otp_dash"
+            android:layout_marginTop="@dimen/margin_11dp"
+            android:layout_below="@+id/ll_otp_dash"
+            android:gravity="center"
+            android:text="@string/resend_OTP"
+            android:textColor="@color/deep_red"
+            android:textSize="14sp" />
+
+        <com.example.prithvi.marke8hub.Views.BRButton
+            android:id="@+id/verify_submit_btn"
+            style="@style/submitButtonLayout"
+            android:background="@drawable/canvas_sign_btn"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

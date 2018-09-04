@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GenderActivity">
+
+    <ImageView
+        android:id="@+id/gender_toolbar"
+        android:layout_width="@dimen/margin_140dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:background="@drawable/marke8hub"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_below="@id/gender_toolbar"
+        android:layout_marginTop="@dimen/margin_35dp"
+        android:layout_width="310dp"
+        android:layout_height="160dp"
+        android:background="@color/lightGrey"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/circle_image_male"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/male"
+            android:layout_margin="@dimen/margin_8dp"/>
+
+
+        <ImageView
+            android:id="@+id/circle_image_female"
+            android:layout_width="120dp"
+            android:visibility="invisible"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/female" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_gender_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/gender_text_1"
+            android:textColor="@color/sub_heading_grey"
+            android:textSize="@dimen/margin_15sp"
+            />
+
+        <com.example.prithvi.marke8hub.Views.BRTextView
+            android:id="@+id/tv_gender_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/gender_text_2"
+            android:textColor="@color/sub_heading_grey"
+            android:textSize="@dimen/margin_15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearL3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_40dp"
+        android:layout_alignStart="@id/ll2"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:layout_alignEnd="@id/ll2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/ll2">
+
+        <com.example.prithvi.marke8hub.Views.BRButton
+            android:id="@+id/male_btn"
+            android:textSize="20dp"
+            android:textIsSelectable="true"
+            android:background="@drawable/canvas_transparent_btn"
+            android:layout_width="119dp"
+            android:layout_height="@dimen/margin_40dp"
+            android:text="MALE"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite" />
+
+        <com.example.prithvi.marke8hub.Views.BRButton
+            android:id="@+id/female_btn"
+            android:textSize="20dp"
+            android:layout_marginStart="@dimen/margin_2dp"
+            android:background="@drawable/canvas_transparent_btn"
+            android:layout_width="119dp"
+            android:layout_height="@dimen/margin_40dp"
+            android:text="female"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <com.example.prithvi.marke8hub.Views.BRButton
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/nxt_btn"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/margin_40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/canvas_sign_btn"
+        android:text="next"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <com.example.prithvi.marke8hub.Views.BRButton
+        android:id="@+id/skip_btn"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/margin_40dp"
+        android:layout_width="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_33dp"
+        android:background="@color/transparent"
+        android:text="skip"
+        android:textAllCaps="true"
+        android:textColor="@color/orange_500"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

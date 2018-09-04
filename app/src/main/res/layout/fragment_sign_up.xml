@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/sign_in_rl"
+        android:layout_margin="@dimen/margin_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILayout_forget_old_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp">
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/et_forget_pass"
+                style="@style/textInputLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_perm_identity_18"
+                android:gravity="center_vertical"
+                android:hint="Name of the user"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_11sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILayout_new_pass"
+            android:layout_below="@+id/tILayout_forget_old_pass"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/et_new_pass"
+                style="@style/textInputLayout"
+                android:drawableStart="@drawable/ic_phone_android_18"
+                android:drawablePadding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center_vertical"
+                android:hint="Mobile Number"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_11sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILayout_confirm_pass"
+            android:layout_below="@+id/tILayout_new_pass"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/et_confirm_pass"
+                style="@style/textInputLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mail_18"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center_vertical"
+                android:hint="Email ID"
+                android:maxEms="10"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_11sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILayout_reconfirm_pass"
+            android:layout_below="@+id/tILayout_confirm_pass"
+            android:layout_marginTop="5dp"
+            app:passwordToggleDrawable="@drawable/canvas_toggle_password"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.prithvi.marke8hub.Views.BREditText
+                android:id="@+id/et_reconfirm_pass"
+                style="@style/textInputLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_https_18"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:hint="Change Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_11sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <com.example.prithvi.marke8hub.Views.BRButton
+        android:id="@+id/sign_up_btn"
+        style="@style/submitButtonLayout"
+        android:background="@drawable/canvas_sign_btn"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="@dimen/margin_40dp"
+        android:text="Sign Up"
+        />
+
+</LinearLayout>

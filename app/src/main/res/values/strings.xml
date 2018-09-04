@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Marke8Hub</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forget_password">forgot Password?</string>
+    <string name="enter_email_hint">Email ID or Number</string>
+    <string name="enter_user_hint">Name of the User</string>
+    <string name="enter_OTP_number">Verify Your Mobile No.</string>
+    <string name="verify_OTP_1">6 digit OTP has been sent to</string>
+    <string name="verify_OTP_2">your registered mobile number</string>
+    <string name="enter_OTP_here">Enter OTP here</string>
+    <string name="enter_OTP">_ _ _ _ _ _</string>
+    <string name="resend_OTP">Resend OTP</string>
+    <string name="congratulations">Congratulations! Kapil Chauhan</string>
+    <string name="thanks_heading">Thank you! Kapil Chauhan</string>
+    <string name="account_created_1">Your account is created successfully.</string>
+    <string name="thanks_1">for sharing your location and interest details.</string>
+    <string name="account_created_2">We have sent you email verification link to your register emailId.\nPlease verify your Email ID</string>
+    <string name="thanks_2">This information helps us to show you best.\noffers/deals at your nearest location.</string>
+    <string name="gender_text_1">According to your Gendery well customize</string>
+    <string name="gender_text_2">your complete look to the app</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/sub_heading_grey</item>
+        <item name="colorControlHighlight">@color/sub_heading_grey</item>
+
+    </style>
+
+    <style name="textInputLayout" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/sub_heading_grey</item>
+        <item name="android:textSize">@dimen/margin_11sp</item>
+        <item name="colorControlNormal">#839191</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textColorHint">@color/sub_heading_grey</item>
+        <item name="colorControlActivated">@color/sub_heading_grey</item>
+        <item name="colorControlHighlight">@color/sub_heading_grey</item>
+
+    </style>
+
+    <style name="My_tab_Layout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:tabStripEnabled">true</item>
+        <item name="android:textSize">@dimen/margin_18sp</item>
+
+    </style>
+
+    <style name="submitButtonLayout" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">70dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+</resources>

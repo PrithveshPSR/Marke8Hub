@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".Activity.SignUpCongratsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/congrats_toolbar"
+            android:layout_width="@dimen/margin_140dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:background="@drawable/marke8hub"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"/>
+
+        <com.example.prithvi.marke8hub.Views.BRBTextView
+            android:id="@+id/tv_congrats"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulations"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/margin_19dp"
+            android:gravity="center"
+            android:layout_below="@+id/congrats_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <com.example.prithvi.marke8hub.Views.BRTextView
+                android:id="@+id/tv_acc_create_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_created_1"
+                android:textColor="@color/sub_heading_grey"
+                android:textSize="@dimen/margin_15sp" />
+
+            <com.example.prithvi.marke8hub.Views.BRTextView
+                android:id="@+id/tv_acc_create_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_25dp"
+                android:textAlignment="center"
+                android:text="@string/account_created_2"
+                android:textColor="@color/sub_heading_grey"
+                android:textSize="@dimen/margin_15sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.example.prithvi.marke8hub.Views.BRButton
+        android:id="@+id/continue_btn"
+        style="@style/submitButtonLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/canvas_sign_btn"
+        android:text="Continue"/>
+
+</RelativeLayout>
